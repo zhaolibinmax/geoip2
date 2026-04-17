@@ -1,5 +1,5 @@
-# LibreSpeed + GeoIP2 一键部署脚本
-一键部署 LibreSpeed 测速服务 + Nginx GeoIP2 地域访问限制，支持 Cloudflare 真实 IP 还原。
+# LibreSpeed/Cloudreve + GeoIP2 一键部署脚本
+一键部署 LibreSpeed 测速服务/Cloudreve 网盘服务 + Nginx GeoIP2 地域访问限制，支持 Cloudflare 真实 IP 还原。
 
 ## 📝 说明
 
