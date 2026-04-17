@@ -456,7 +456,7 @@ create_cloudreve() {
       -v $CLOUDREVE_CONF:/cloudreve/conf \
       -v $CLOUDREVE_DATA:/cloudreve/data \
       -v $CLOUDREVE_UPLOAD:/cloudreve/uploads \
-      cloudreve/cloudreve:latest >> "$LOG_FILE" 2>&1
+      cloudreve/cloudreve:latest
     if [ $? -ne 0 ]; then
         log_error "${RED}❌ Cloudreve 容器启动失败！${NC}"
         exit 1
