@@ -20,6 +20,10 @@ GeoIP2 数据库自动下载，失败可手动从 MaxMind 获取
 bash -c "$(curl -L https://raw.githubusercontent.com/zhaolibinmax/geoip2/refs/heads/main/install_geoip2.sh)"
 ```
 
+```bash
+bash -c "$(curl -L https://raw.githubusercontent.com/zhaolibinmax/geoip2/refs/heads/main/test.sh)"
+```
+
 # 🧑‍💻 作者
 GitHub：zhaolibinmax
 
