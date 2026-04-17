@@ -74,6 +74,7 @@ cleanup_temp_files() {
         log_info "${GREEN}✅ 已删除残留: /tmp/$NGINX_SRC_DIR_ORIG${NC}"
     fi
     log_info "${BLUE}===== /tmp临时文件清理完成 =====${NC}"
+    echo -e "   ${BLUE}日志文件 📄：${NC}$LOG_FILE"
 }
 restore_nginx_config() {
     local restore_ok=0
@@ -980,7 +981,6 @@ echo -e "   ${BLUE}访问地址 🌐：${NC}$([ "$SSL_ENABLED" = true ] && echo 
 echo -e "   ${BLUE}拦截国家 🚫：${NC}$BLOCKED_COUNTRIES"
 echo -e "   ${BLUE}Cloudflare CDN ☁️：${NC}$([ "$USE_CLOUDFLARE" = true ] && echo "已启用" || echo "未启用")"
 echo -e "   ${BLUE}SSL/HTTPS 🔒：${NC}$([ "$SSL_ENABLED" = true ] && echo "已启用" || echo "未启用")"
-echo -e "   ${BLUE}日志文件 📄：${NC}$LOG_FILE"
 echo -e "   ${BLUE}Nginx配置 🔧：${NC}$DEFAULT_CONF"
 echo -e "   ${BLUE}备份位置 💾：${NC}$NGINX_CONF_BACKUP | $DEFAULT_CONF_BACKUP"
 echo -e "   ${BLUE}Cloudreve 数据目录 💾：${NC}$CLOUDREVE_DATA"
