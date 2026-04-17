@@ -644,7 +644,7 @@ if [ ! -f "$DB_FILE" ]; then
     log_info "${GREEN}正在自动下载GeoIP2数据库...${NC}"
     mkdir -p "$GEOIP_DB_PATH"
     GEOIP_DB_URLS=(
-        "https://github.com/zhaolibinmax/install_geoip2/raw/refs/heads/main/GeoLite2-Country.mmdb"
+        "https://github.com/zhaolibinmax/geoip2/raw/refs/heads/main/GeoLite2-Country.mmdb"
         "https://cdn.jsdelivr.net/gh/P3TERX/GeoLite2-CN@release/GeoLite2-Country.mmdb"
         "https://raw.githubusercontent.com/P3TERX/GeoLite2-CN/release/GeoLite2-Country.mmdb"
     )
